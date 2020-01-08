@@ -1,1 +1,1 @@
-https://github.com/as28652865g/banana.git
+https://github.com/as28652865g/banana
