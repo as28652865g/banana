@@ -191,7 +191,7 @@
 		}
 		/*主題*/
 		.main-title{
-			margin: 100px 0;
+			margin: 80px 0;
 		}
 		.main-title p{
 			font-size: 45px;
@@ -296,7 +296,7 @@
 				display: flex;
 			}
 			.item-Broken .txt p{
-				font-size: 18px;
+				font-size: 17px;
 			}
 		}
 
@@ -374,13 +374,13 @@
 
 		.wrap-Introduction{
 			justify-content: center;
-
 			width: 100%;
-			margin: auto;
+
 		}
 		.item-Introduction{
-			width: 368px;
-			margin: 12px;
+			width: 346px;
+			margin-left: auto;
+			margin-right: auto;
 			text-align: center;
 			background-color: #fff;
 			border: 1px solid #ccc;
@@ -390,6 +390,7 @@
 		.item-Introduction img{
 			width: 100%;
 			height: 500px;
+			object-fit: cover;
 			vertical-align: middle;
 		}
 		.item-Introduction h2{
@@ -407,18 +408,6 @@
 			padding: 20px;
 			position: relative;
 		}
-/*		.item-Introduction .txt:before{
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 0;
-			left: 0;
-			top: 0;
-			border-top: 50px solid transparent;
-			border-left: 184px solid #fff;
-			border-right: 184px solid #fff;
-			transform: translateY(-100%);
-		}*/
 		.item-Introduction:hover{
 			transform: translateY(-50px);
 		}
@@ -441,6 +430,7 @@
 		@media screen and (min-width:768px){
 			.wrap-Introduction{
 				display: flex;
+
 			}
 		}
 
@@ -457,8 +447,12 @@
 		.main-footer li{
 			padding: 10px;
 		}
-		@media screen and (min-width:768px){
+		@media screen and (max-width:767px){
 			.main-footer{
-				font-style: 13px;
+				width:auto;
+				padding: 2px;
+				background: #aaa;
+				text-align: center;
+				font-size: 8px;
 			}
 		}
