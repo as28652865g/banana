@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<input type="checkbox" name="" id="menu_control">
 	
 	<div class="main-header">
@@ -18,16 +19,16 @@
 				<span>選單</span>
 			</label>
 			<nav>
-				<a href="#">自我介紹</a>
-				<a href="#">學習歷程</a>
-				<a href="#">生活點滴</a>
-				<a href="#">個人照</a>
-				<a href="#">資訊欄</a>	
+				<a href="#home">自我介紹</a>
+				<a href="#learn">學習歷程</a>
+				<a href="#life">生活點滴</a>
+				<a href="#photo">個人照</a>
+				<a href="#information">資訊欄</a>	
 			</nav>
 		</div>
 	</div>
 
-	<div class="banner">
+	<div class="banner" id="home" >
 		<div class="container-banner">
 			<div class="banner-txt">
 				<h1>Hello !</h1>
@@ -38,7 +39,7 @@
 	</div>
 
 	<div class="main-title">
-		<div class="container-main-title">
+		<div class="container-main-title" id="learn">
 			<h1>我是如何學習的?</h1>
 				<div class="txt">
 						<p></p>
@@ -80,7 +81,7 @@
 	</div>
 
 	<div class="main-title">
-		<div class="container-main-title">
+		<div class="container-main-title" id="life">
 			<h1>生活點滴</h1>
 				<div class="txt">
 						<p>平常喜歡打排球、打電腦、出門逛街。</p>
@@ -124,8 +125,8 @@
 		</div>
 	</div>
 
-	<div class="main-title">
-		<div class="container-main-title">
+	<div class="main-title" >
+		<div class="container-main-title" id="photo">
 			<h1>個人照</h1>
 				<div class="txt">
 				</div>
@@ -165,7 +166,7 @@
 		<!-- 頁尾 -->
 
 
-	<div class="main-footer">
+	<div class="main-footer" id="information">
 		<ul class="icons">
 			<li><a href="mailto:as28652865g@gmail.com" class="icon fa fa-envelope-o">
 				<span class="label">Email:</span>
@@ -176,5 +177,22 @@
 					<li>&copy;CHEN PIN HAN</li>
 				</ul>
 	</div>
+
+	<!-- TOP按鈕 -->
+	<button type="button" id="BackTop" class="toTop-arrow"></button>
+		<script>
+			$(function(){
+				$('#BackTop').click(function(){ 
+					$('html,body').animate({scrollTop:0}, 333);
+				});
+				$(window).scroll(function() {
+					if ( $(this).scrollTop() > 300 ){
+						$('#BackTop').fadeIn(222);
+					} else {
+						$('#BackTop').stop().fadeOut(222);
+					}
+				}).scroll();
+			});
+		</script>
 </body>
 </html>
