@@ -108,8 +108,8 @@
 		}
 		.banner .container-banner{
 			width: 100%;
-			max-width:1200px; 
-			height: 500px;
+			max-width:1400px; 
+			height: 600px;
 			margin:auto;
 		}
 		.banner-txt{
@@ -182,8 +182,7 @@
 			align-items: center;
 		}
 		.wrap-Broken{
-			max-width: 1200px;
-			/*display: flex;*/
+			max-width: 1400px;
 			height: auto;
 			margin: auto;
 			padding-top: 75px;
@@ -205,7 +204,7 @@
 		}
 		.item-Broken p{
 			font-size: 20px;
-			color: #ccc;
+			color: #000;
 			text-align: left;
 			text-indent: 43px;
 			letter-spacing: 2px;
@@ -252,18 +251,20 @@
 	/*超通用橫式版面*/
 
 		.wrap-Horizontal{
+			max-width: 1400px;
+			margin-left: auto;
+   		    margin-right: auto;
 			display: flex;
 			align-items: center;
 		}
 		.container-Horizontal{
 			width: 100%;
-			margin: auto;
 			display: flex;
 			justify-content: center;
 			flex-wrap:wrap; 
 		}
 		.item-Horizontal{
-			width: 368px;
+			width: 435px;
 			margin: 0 15px;
 			display: flex;
 			background-color: #fff;
@@ -317,9 +318,10 @@
 	/*人員介紹卡片*/
 
 		.wrap-Introduction{
-			justify-content: center;
-			width: 100%;
-
+			max-width: 1400px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    justify-content: center;
 		}
 		.item-Introduction{
 			width: 346px;
